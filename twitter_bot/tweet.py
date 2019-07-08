@@ -1,7 +1,9 @@
 import tweepy
-from keys import *
-from urllib.request import urlopen
 import json
+
+path = "../generator/"
+
+from keys import *
 
 import sys
 sys.path.append(path)
