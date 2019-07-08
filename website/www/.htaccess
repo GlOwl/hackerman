@@ -1,0 +1,7 @@
+DirectoryIndex generator.php index.php index.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*)$ $1\.php

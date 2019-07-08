@@ -1,0 +1,146 @@
+Connecting the transmitter won't do anything, we need to navigate the mobile XSS transmitter!
+If we input the sensor, we can get to the CSS sensor through the auxiliary CSS sensor!
+If we navigate the array, we can get to the XSS array through the wireless XSS array!
+I'll bypass the cross-platform HDD monitor, that should monitor the HDD monitor!
+I'll hack the haptic CSS matrix, that should matrix the CSS matrix!
+I'll input the primary SDD bus, that should bus the SDD bus!
+I'll parse the primary SMS feed, that should feed the SMS feed!
+I'll synthesize the online FTP transmitter, that should transmitter the FTP transmitter!
+The ADP hard drive is down, input the bluetooth hard drive so we can input the ADP hard drive!
+The AGP bus is down, index the haptic bus so we can index the AGP bus!
+The GB feed is down, hack the multi-byte feed so we can hack the GB feed!
+The IB circuit is down, input the 1080p circuit so we can input the IB circuit!
+The IB microchip is down, transmit the haptic microchip so we can transmit the IB microchip!
+The SAS firewall is down, input the 1080p firewall so we can input the SAS firewall!
+The SCSI interface is down, hack the optical interface so we can hack the SCSI interface!
+The SDD array is down, generate the mobile array so we can generate the SDD array!
+The SDD card is down, compress the cross-platform card so we can compress the SDD card!
+The USB bandwidth is down, compress the haptic bandwidth so we can compress the USB bandwidth!
+The USB circuit is down, override the cross-platform circuit so we can override the USB circuit!
+Try to copy the SMS transmitter, maybe it will copy the haptic transmitter!
+Try to navigate the PNG firewall, maybe it will navigate the redundant firewall!
+Try to parse the RAM alarm, maybe it will parse the wireless alarm!
+Try to synthesize the PNG application, maybe it will synthesize the online application!
+Try to synthesize the USB microchip, maybe it will synthesize the haptic microchip!
+Use the bluetooth JBOD pixel, then you can override the bluetooth pixel!
+Use the primary SAS pixel, then you can synthesize the primary pixel!
+Use the wireless SAS panel, then you can generate the wireless panel!
+We need to bypass the optical RAM circuit!
+We need to generate the redundant PNG transmitter!
+We need to input the optical AI microchip!
+You can't copy the application without copying the wireless SCSI application!
+You can't generate the bus without bypassing the primary GB bus!
+You can't generate the driver without copying the digital SMS driver!
+You can't generate the matrix without transmitting the digital XSS matrix!
+
+SENTENCE
+    [INDEPENDENT_CLAUSE]
+    INDEPENDENT_CLAUSE + CONJUNCTION + INDEPENDENT_CLAUSE
+    INDEPENDENT_CLAUSE + CONJUNCTION + DEPENDENT_CLAUSE
+
+INDEPENDENT_CLAUSE
+    SUBJECT_PHRASE + VERB_PHRASE(case defined by noun(&time))
+    SUBJECT_PHRASE + VERB_PHRASE(case defined by noun(&time)) + OBJECT_PHRASE
+
+DEPENDENT_CLAUSE
+    REFFERNECE + VERB_PHRASE(case defined by refference(&time))
+
+CONJUNCTION
+    conjunction
+
+SUBJECT_PHRASE
+    NOUN_PHRASE
+
+OBJECT_PHRASE
+    NOUN_PHRASE
+
+NOUN_PHRASE
+    (PRONOUN [defined by noun, ending dependent on starting letter next]) + (ADJECTIVE_PHRASE) + NOUN
+
+VERB_PHRASE
+    VERB
+
+VERB
+    verb
+
+
+
+
+
+
+
+
+    no - noun
+    ve - verb
+    ad - adjective
+    av - adverb
+    pn - pronoun
+    pr - preposition
+    co - conjunction
+    in - interjection
+
+    Sentence -> IndependentSentence, (Conjunction, IndependentSentence)
+    Sentence -> IndependentSentence,
+    IndependentSentence -> Noun Phrase, Verb Phrase
+    NounPhrase -> (Determiner), Noun1
+    Noun1 -> (AdjectivePhrase), Noun1, (PrepositionalPhrase)
+    Noun1 -> Noun1, Conjunction, Noun1
+    VerbPhrase -> (Adverb), verb, (Noun1)
+    VerbPhrase -> VerbPhrase, Conjunction, VerbPhrase
+    AdjectivePhrase -> (Adverb), Adjective
+
+
+    nouns                -> Thing, Place, Person
+    pronouns             -> the, a, number
+    verbs                -> action/state of being
+    Proverbs/Preposition
+        Time:               in, on, at
+        Location:           in, on, at
+        Means:              by
+        Origin:             from
+        Destination:        to
+        Co-participant:     with
+
+    modifiers
+        adjectives    -> modify nouns
+        adverbs        -> modify verbs, adjectives and adverbs
+    prepositions    ->
+    interjections    ->
+
+    conjunctions    ->
+    Coordinationg    Conjunctions
+        yet, or, nor, for, and, so, but
+    Paired Conjunctions
+        both . . . and
+        either . . . or
+        neither . . . nor
+        not . . . but
+        not . . . nor
+        not only . . . but (also)
+        whether . . . or
+
+    Subject
+        Noun
+
+    Object
+        Noun
+
+    Predicate
+        verb
+        verb - object
+
+    Clause
+        Subject - predicate
+
+    Simple_Sentence ->
+        Clause
+
+    Coumpund_Sentence
+        Clause - Coordination - Clause
+
+    Complex_Sentence
+        Clause - "when"/"after"/"before" - Dependent Clause
+
+    Complex_Compound_Sentence
+        Clause - "when"/"after"/"before" - Dependent Clause - Coordination - Clause
+        Clause - Coordination - Clause - "when"/"after"/"before" - Dependent Clause
