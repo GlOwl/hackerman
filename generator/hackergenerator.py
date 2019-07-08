@@ -22,7 +22,7 @@ def generate(n):
     return quotes;
 
 def sentence():
-    x = random.choice([0])
+    x = random.choice([1])
     if(x is 0):
         a = random.choice(['s', 'm'])
         if(a is 's'):
@@ -33,7 +33,8 @@ def sentence():
         r = noun_phrase(definite = random.choice([True, False]), hasAdjective = random.choice([True, False]), singularity = a, compound = random.choice([True, False])) + " " + verb(conjugation = b, time = random.choice(['simple_present', 'simple_past', 'simple_future'])) + " " + random_noun_phrase() + "."
         return r[0].upper() + r[1:]
     elif(x is 1):
-        print("")
+        r = verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + ", then you can " + verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + "!"
+        return r[0].upper() + r[1:]
 """Pronoun1 verb(simple_future, pronoun1) noun_phrase(definite), that should verb(simple_present, it) noun_phrase(definite)!
 
 noun_phrase is adjective, verb(simple_present, you) noun_phrase so Pronoun can verb(simple_present, pronoun) noun_phrase(definite)!
@@ -42,7 +43,7 @@ Pronoun verbify(need) to verb(simple_present, pronoun) noun_phrase(definite)!
 
 Pronoun can't verb(simple_present, pronoun) noun_phrase() without verb(simple_present, you) noun_phrase()!
 
-Verb(simple_present, you) noun_phrase(), then you can verb(simple_present, you) noun_phrase(definite)!
+
 
 If pronoun1 verb(simple_present, pronoun1) noun_phrase(), pronoun1 can verb(simple_present) noun_phrase(definite) through/arround noun_phrase(definite)!"""
 
