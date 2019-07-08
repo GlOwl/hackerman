@@ -4,7 +4,7 @@ The random hacker quote generator.
 <p align="center"><img alt="PICTURE logo" src="https://raw.githubusercontent.com/GlOwl/hackerman/master/logo.png" width="200"></p>
 
 <p align="center">
-🐦 <a href="https://twitter.com/hackermanwtf">Twitter</a>
+🐦 <a href="https://twitter.com/hackermanwtf">@hackermanwtf</a>
 | 🌍 <a href="https://hackerman.wtf">hackerman.wtf</a><br>
 <br>
 <b>Generate your own hackerman quotes</b></p>
