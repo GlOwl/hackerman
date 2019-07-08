@@ -48,13 +48,17 @@ def sentence():
         p1 = pronoun(random.choice([True, False]))
         r = p1 + random.choice([" can't ", " can ", " may "]) + verb(conjugation = 'i', time = 'simple_present') + " " + random_noun_phrase() + random.choice([" without ", " with ", " between ", " inside ", " outside ", " on ", " through ", " arround "]) + random_noun_phrase() + "!"
         return r[0].upper() + r[1:]
+    elif(x is 3):
+        print(" ");
+
+
+
+
 """Pronoun1 verb(simple_future, pronoun1) noun_phrase(definite), that should verb(simple_present, it) noun_phrase(definite)!
 
 noun_phrase is adjective, verb(simple_present, you) noun_phrase so Pronoun can verb(simple_present, pronoun) noun_phrase(definite)!
 
 Pronoun verbify(need) to verb(simple_present, pronoun) noun_phrase(definite)!
-
-
 
 If pronoun1 verb(simple_present, pronoun1) noun_phrase(), pronoun1 can verb(simple_present) noun_phrase(definite) through/arround noun_phrase(definite)!"""
 
@@ -63,16 +67,7 @@ If pronoun1 verb(simple_present, pronoun1) noun_phrase(), pronoun1 can verb(simp
 
 
 
-
-
-
-
-
-
-
-
-def verb(conjugation = 'it', time = 'simple_present', inverted = "no"):
-    a = random.choice(verb_list.verb_list)
+def verb(conjugation = 'it', time = 'simple_present', inverted = "no", a = random.choice(verb_list.verb_list)):
     if("r" in a[0]):
         if(time == "simple_present"):
             if(conjugation in ["i", "you", "we", "they"]):
@@ -107,19 +102,19 @@ def random_noun_phrase():
     compound = random.choice([True, False])
     )
 
-def noun_phrase(definite = True, hasAdjective = False, singularity = "s", compound = False):
-    a = ""
+def noun_phrase(definite = True, hasAdjective = False, singularity = "s", compound = False, n = noun_list.noun_list, a = adjective_list.adjective_list):
+    adj = ""
     if(hasAdjective is True):
-        a = adjective() + " "
-    md = a + noun(singularity = singularity, compound = compound)
+        adj = adjective(a = a) + " "
+    md = adj + noun(singularity = singularity, compound = compound, n = n)
     if(definite is True):
         return ("the " if singularity is "s" else "") + md
     else:
         #We know that this is not entirely correct but we didn't bother to do a speach analysis for every word ;p
         return (("a" + ("n " if (md[0] in ["a", "e", "i", "o", "u"]) else " ")) if singularity is "s" else "") + md
 
-def noun(singularity = "s", compound = False):
-    n = noun_list.noun_list
+def noun(singularity = "s", compound = False, n = noun_list.noun_list):
+
     nb = [w for w in n if "b" in w[0]]
     ne = [w for w in n if "e" in w[0]]
     if(compound):
@@ -144,8 +139,7 @@ def noun(singularity = "s", compound = False):
 def pronoun(singular = True):
     return(random.choice(["i", "you", "he", "she", "it"] if singular else ["we", "you", "they"]))
 
-def adjective():
-    a = adjective_list.adjective_list
+def adjective(a = adjective_list.adjective_list):
     return random.choice(a)[1]
 
 def main():
