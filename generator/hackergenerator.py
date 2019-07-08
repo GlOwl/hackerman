@@ -22,7 +22,7 @@ def generate(n):
     return quotes;
 
 def sentence():
-    x = random.choice([1])
+    x = random.choice(range(0, 2))
     if(x is 0):
         a = random.choice(['s', 'm'])
         if(a is 's'):
@@ -30,18 +30,20 @@ def sentence():
         else:
             b = 'they'
 
-        r = noun_phrase(definite = random.choice([True, False]), hasAdjective = random.choice([True, False]), singularity = a, compound = random.choice([True, False])) + " " + verb(conjugation = b, time = random.choice(['simple_present', 'simple_past', 'simple_future'])) + " " + random_noun_phrase() + "."
+        r = noun_phrase(definite = random.choice([True, False]), hasAdjective = random.choice([True, False, False]), singularity = a, compound = random.choice([True, False])) + " " + verb(conjugation = b, time = random.choice(['simple_present', 'simple_past', 'simple_future'])) + " " + random_noun_phrase() + "."
         return r[0].upper() + r[1:]
     elif(x is 1):
-        r = verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + ", then you can " + verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + "!"
+        r = verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + ", then you can " + verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + "!"
+        return r[0].upper() + r[1:]
+    elif(x is 2):
+        p1 = pronoun(random.choice([True, False]))
+        r = p1 + random.choice([" can't ", " can ", " may "]) + verb(conjugation = 'i', time = 'simple_present') + " " + random_noun_phrase() + random.choice([" without ", " with ", " between ", " inside ", " outside ", " on ", " through ", " arround "]) + random_noun_phrase() + "!"
         return r[0].upper() + r[1:]
 """Pronoun1 verb(simple_future, pronoun1) noun_phrase(definite), that should verb(simple_present, it) noun_phrase(definite)!
 
 noun_phrase is adjective, verb(simple_present, you) noun_phrase so Pronoun can verb(simple_present, pronoun) noun_phrase(definite)!
 
 Pronoun verbify(need) to verb(simple_present, pronoun) noun_phrase(definite)!
-
-Pronoun can't verb(simple_present, pronoun) noun_phrase() without verb(simple_present, you) noun_phrase()!
 
 
 
@@ -91,18 +93,18 @@ def verb(conjugation = 'it', time = 'simple_present', inverted = "no"):
 def random_noun_phrase():
     return noun_phrase(
     definite = random.choice([True, False]),
-    hasAdjective = random.choice([True, False]),
+    hasAdjective = random.choice([True, False, False]),
     singularity = random.choice(["s", "m"]),
     compound = random.choice([True, False])
     )
 
-def noun_phrase(definite = True, hasAdjective = True, singularity = "s", compound = False):
+def noun_phrase(definite = True, hasAdjective = False, singularity = "s", compound = False):
     a = ""
     if(hasAdjective is True):
         a = adjective() + " "
     md = a + noun(singularity = singularity, compound = compound)
     if(definite is True):
-        return "the " + md
+        return ("the " if singularity is "s" else "") + md
     else:
         #We know that this is not entirely correct but we didn't bother to do a speach analysis for every word ;p
         return (("a" + ("n " if (md[0] in ["a", "e", "i", "o", "u"]) else " ")) if singularity is "s" else "") + md
@@ -130,7 +132,7 @@ def noun(singularity = "s", compound = False):
             else:
                 return x[1] + "s"
 
-def pronoun(singular = 'true'):
+def pronoun(singular = True):
     return(random.choice(["i", "you", "he", "she", "it"] if singular else ["we", "you", "they"]))
 
 def adjective():
