@@ -18,53 +18,54 @@ noun_list = [
     ["smbr", "LCD"],
     ["sber", "bandwidth"],
     ["smber", "virus"],
-    ["sbr", "UTF-8"]
+    ["sbr", "UTF-8"],
+    ["smber", "web"],
+    ["sbr", "handler"],
+    ["smber", "exeption"],
+    ["smber", "path"],
+    ["smber", "refference"],
+    ["smber", "template"],
+    ["smber", "wildcard"],
+    ["smber", "interface"],
+    ["sber", "syntax"],
+    ["smber", "loop"],
+    ["smber", "demon"],
+    ["smber", "core"],
+    ["sber", "interpreter"],
+    ["smber", "string"],
+    ["smber", "document"],
+    ["smber", "cookie"],
+    ["smber", "codec"],
+    ["smber", "e-mail"],
+    ["smber", "OS"],
+    ["smber", "service"],
+    ["sber", "provider"],
+    ["smber", "cache"],
+    ["smber", "database"],
+    ["smber", "object"],
+    ["smbers", "dictionary"],
+    ["sber", "driver"],
+    ["smber", "index"],
+    ["sber", "encoder"],
+    ["smber", "list"],
+    ["smber", "tuple"],
+    ["smber", "range"],
+    ["smber", "stream"],
+    ["sber", "internet"],
+    ["smber", "component"],
+    ["smber", "module"],
+    ["smber", "library"],
+    ["smber", "limit"],
+    ["smber", "function"],
+    ["smber", "token"],
+    ["smber", "code"],
+    ["smber", "wave"],
+    ["sber", "IoT"],
+    ["smber", "blockchain"]
 ]
 
 
 """
-- web
-- handler
-- exception
-- path
-- reference
-- template
-- s spacetime
-- wildcard
-- interface
-- syntax
-- loop
-- demon
-- virus
-- core
-- interpreter
-- string
-- document
-- cookie
-- codec
-- e-mail
-- OS
-- service
-- cache
-- database
-- object
-- dictionary
-- driver
-- index
-- encoder
-- list
-- tuple
-- range
-- stream
-- internet
-- component
-- module
-- library
-- limit
-- function
-- token
-- code
-- audio wave
 - thread
 - error
 - warning
@@ -113,8 +114,6 @@ noun_list = [
 - analyzer
 - application
 - bandwidth
-- IoT
-- blockchain
 - firewall
 - cybernuke
 - IRC
