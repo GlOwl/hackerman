@@ -4,7 +4,7 @@ from urllib.request import urlopen
 import json
 
 import sys
-sys.path.append('../generator/')
+sys.path.append(path)
 import hackergenerator
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
