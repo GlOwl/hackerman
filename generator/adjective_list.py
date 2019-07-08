@@ -18,6 +18,7 @@ adjective_list = [
 ]
 
 """
+- forbidden
 - root
 - patented
 - virtual
