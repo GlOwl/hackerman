@@ -13,6 +13,15 @@ def get_json(n):
 
     return json.dumps(response)
 
+def get_csv(n):
+    quotes = generate(n)
+    csv = ""
+
+    for i in range(len(quotes)):
+        csv = csv + quotes[i] + "\n"
+
+    return csv
+
 def generate(n):
     quotes = []
 
@@ -139,8 +148,20 @@ def adjective():
     a = adjective_list.adjective_list
     return random.choice(a)[1]
 
+def main():
+    n = 1
+    format = "csv"
 
-if(len(sys.argv) == 2):
-    print(get_json(int(sys.argv[1])));
-else:
-    print(get_json(1))
+    if(len(sys.argv) >= 2):
+        n = int(sys.argv[1])
+
+    if(len(sys.argv) >= 3):
+        format = sys.argv[2]
+
+    if(format == "json"):
+        print(get_json(n));
+    elif(format == "csv"):
+        print(get_csv(n))
+
+if __name__ == "__main__":
+    main()
