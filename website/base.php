@@ -45,6 +45,9 @@
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/GlOwl/hackerman">GitHub</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/hackermanwtf">Twitter</a>
+          </li>
         </ul>
 
       </div>
