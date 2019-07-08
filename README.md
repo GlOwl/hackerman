@@ -1,5 +1,4 @@
 # Hackerman Quote Generator
-The random hacker quote generator.  
 
 <p align="center"><img alt="PICTURE logo" src="https://raw.githubusercontent.com/GlOwl/hackerman/master/logo.png" width="200"></p>
 
