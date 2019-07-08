@@ -1,5 +1,5 @@
 # Hackerman Quote Generator
-The random (fake!) quote generator.  
+The random hacker quote generator.  
 
 ## Idea
 
@@ -29,44 +29,29 @@ Oh and we are creating an API for anyone to use.
 
 Visit [hackerman.wtf](https://hackerman.wtf).  
 
-Demo with placeholder quotes  
-<p style="text-align: center">
-  <img src="#" width="600" alt="Website demo">
-</p>
+## Twitter Account
+
+Follow [@hackermanwtf](http://twitter.com/hackermanwtf) to get your daily dose
+of hackerman quotes!  
 
 ## API
 
 ## Online API
 
-Get a **single** random generated quote at `hackerman.wtf/api`  
-Returned is a JSON file
-```json
-{ "quotes": ["We need to generate the redundant PNG transmitter!"] }
-```  
-[Try it out](https://hackerman.wtf/api)  
-
-Get **multiple** random generated quotes (max, 100 per query) at `hackerman.wtf/api?n=3`  
-Returned is a JSON file
-```json
-{ "quotes": ["First Quote", "Second Quote", "Third Quote"] }
-```  
-The parameter `n` sets the number of quotes requested.  
-[Try it out](https://hackerman.wtf/api?n=3)  
+Visit [hackerman.wtf/api-doc](https://hackerman.wtf/api-doc) to learn about the
+online API.
 
 ## Local Generator Script
 
-[...]
+The magic happens in [generator/hackergenerator.py](https://github.com/GlOwl/hackerman/blob/master/generator/hackergenerator.py).  
+You can just run the script using `python3 hackergenerator.py`.  
 
-## To-Do
+The script expects 2 arguments: `python3 hackergenerator.py <number_of_quotes> <format>`.  
+`<number_of_quotes>` is self expandatory (default = 1), `<format>` can be `csv` or `json` (default = csv).  
 
-**General:**  
-- [x] Python sentence generator
-- [x] Web API for generating quotes
-- [x] Website
-- [x] Twitter Bot
+That's not enough for you? Try `python3 hackergenerator.py 1000`!  
 
-**Improvements:**
-None, everything is perfect!  
+You are a robot? Try `python3 hackergenerator.py 10 json`!  
 
 ## Credits & Resources
 
@@ -76,11 +61,11 @@ None, everything is perfect!
 
 **Tools:**  
 - [Python 3](https://www.python.org) Programming Language
-- [Django](https://www.djangoproject.com/) Web Framework
 - [Bootstrap](https://getbootstrap.com/) Web Library
 - [Layoutit](https://www.layoutit.com/) Bootstrap Builder
 - [Lumen](https://bootswatch.com/lumen/) Bootstrap Theme
 - [jQuery](https://jquery.com/) JavaScript Framework
+- [Tweepy](https://www.tweepy.org/) Python Module to interface the Twitter API
 
 ## License
 
