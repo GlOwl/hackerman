@@ -14,14 +14,17 @@ adjective_list = [
     ["ta", "shortened"],
     ["tm", "common"],
     ["te", "raw"],
-    ["tm", "random"]
+    ["tm", "random"],
+    ["ta", "audio"],
+    ["tm", "industrial"],
+    ["tm", "3D-printed"],
+    ["tm", "proprietary"]
 ]
 
 """
 - forbidden
 - root
 - patented
-- virtual
 - generic
 - bricked
 - miscellaneous
@@ -34,7 +37,6 @@ adjective_list = [
 - relative
 - neural
 - 8-bit
-- industrial
 - offline
 - live
 - 3D-printed
@@ -42,7 +44,6 @@ adjective_list = [
 - wireless
 - primary
 - licensed
-- proprietary
 - open
 - open source
 - flexible

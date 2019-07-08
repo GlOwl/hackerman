@@ -9,25 +9,27 @@ verb_list = [
     ["r", "display"],
     ["r", "address"],
     ["r", "identify"],
-    ["i", "build", [["simple_present", {"i": "build", "you": "build", "it": "builds", "we": "build", "they": "build"}], ["simple_past", {"i": "built", "you": "built", "it": "built", "we": "built", "they": "built"}], ["simple_future", {"i": "will build", "you": "will build", "it": "will build", "we": "will build", "they": "will build"}]]]
+    ["i", "build", [["simple_present", {"i": "build", "you": "build", "it": "builds", "we": "build", "they": "build"}], ["simple_past", {"i": "built", "you": "built", "it": "built", "we": "built", "they": "built"}], ["simple_future", {"i": "will build", "you": "will build", "it": "will build", "we": "will build", "they": "will build"}]]],
+    ["r", "load"],
+    ["r", "define"],
+    ["r", "decentralize"],
+    ["r", "update"],
+    ["r", "encode"],
+    ["r", "virtualize"],
+    ["r", "transmit"],
+    ["r", "compile"],
+    ["r", "randomize"],
+    ["r", "deauth"]
 ]
 
 
 """
-- display
-- load
-- define
 - wrap
 - iterate
 - loop
-- build
 - port
-- decentralize
-- address
-- update
 - read
-- i write
-- encode
+- ireg. write
 - infect
 - append
 - mute
@@ -48,12 +50,10 @@ verb_list = [
 - detect
 - block
 - debug
-- virtualize
 - observe
 - bypass
 - input
 - synthesize
-- transmit
 - connect
 - parse
 - generate
@@ -66,7 +66,6 @@ verb_list = [
 - request
 - enter
 - call
-- compile
 - detect
 - print
 - simulate
@@ -84,7 +83,6 @@ verb_list = [
 - invert
 - slice
 - index
-- identify
 - join
 - shorten
 - partition
@@ -102,12 +100,10 @@ verb_list = [
 - add
 - signal
 - process
-- deauth
 - disconnect
 - start
 - interpret
 - yield
-- randomize
 - match
 - inspect
 """
