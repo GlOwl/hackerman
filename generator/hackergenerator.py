@@ -159,6 +159,9 @@ def main():
     if(len(sys.argv) >= 3):
         format = sys.argv[2]
 
+    if(len(sys.argv) >= 4):
+        random.seed(sys.argv[3])
+
     if(format == "json"):
         print(get_json(n));
     elif(format == "csv"):

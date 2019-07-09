@@ -47,7 +47,7 @@ function move_bad_quote(i) {
 function load_new_quotes() {
   if (quotes.length <= 1) {
     $.ajax({
-      url: "api?n=10",
+      url: "api?n=10&f=json&s=" + (Math.floor(Math.random() * 1000000) + 1),
       success: function(result) {
         add_quotes(result.quotes);
         render_quotes();
