@@ -1,7 +1,7 @@
 <?php
 $n = isset($_GET["n"]) && is_int($_GET["n"]) ? $_GET["n"] : 1;
 $f = isset($_GET["f"]) ? $_GET["f"] : "json";
-$s = isset($_GET["n"]) ? $_GET["s"] : "";
+$s = isset($_GET["s"]) ? $_GET["s"] : "";
 
 if($n < 0) $n = 1;
 if($n > 100) $n = 100;
