@@ -18,11 +18,14 @@ adjective_list = [
     ["ta", "audio"],
     ["tm", "industrial"],
     ["tm", "3D-printed"],
-    ["tm", "proprietary"]
+    ["tm", "proprietary"],
+    ["tm", "forbidden"],
+    ["ta", "patented"],
+    ["tm", "neural"],
+    ["tm", "wireless"]
 ]
 
 """
-- forbidden
 - root
 - patented
 - generic
@@ -35,13 +38,10 @@ adjective_list = [
 - logical
 - physical
 - relative
-- neural
 - 8-bit
 - offline
 - live
-- 3D-printed
 - lasered
-- wireless
 - primary
 - licensed
 - open
