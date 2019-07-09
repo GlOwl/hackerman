@@ -41,6 +41,19 @@
 </p>
 <p><a href="/api?n=3&f=csv" class="btn btn-primary mb-4" type="button" target="_blank">Try it out</a></p>
 
+<h3>Random Seed</h3>
+<p>Get quotes generated using your own seed at:</p>
+<p><code>hackerman.wtf/api?s=123</code></p>
+
+<p>
+  The parameter 's' sets the random seed string.<br>
+  Returned is a JSON file:
+</p>
+<p>
+  <code>{"quotes": ["Wildcards transmit a wildcard document."]}</code>
+</p>
+<p><a href="/api?s=123" class="btn btn-primary mb-4" type="button" target="_blank">Try it out</a></p>
+
 <h2 class="my-4">Offline Python Script</h2>
 <p>
   No internet, no problem! If you like to generate quotes on your own machine, you can!<br>
