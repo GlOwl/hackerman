@@ -1,5 +1,5 @@
 <?php
-$n = isset($_GET["n"]) && is_int($_GET["n"]) ? $_GET["n"] : 1;
+$n = isset($_GET["n"]) ? intval($_GET["n"]) : 1;
 $f = isset($_GET["f"]) ? $_GET["f"] : "json";
 $s = isset($_GET["s"]) ? $_GET["s"] : "";
 
