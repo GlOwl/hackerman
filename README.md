@@ -51,14 +51,15 @@ online API.
 ## Local Generator Script
 
 The magic happens in [generator/hackergenerator.py](https://github.com/GlOwl/hackerman/blob/master/generator/hackergenerator.py).  
-You can just run the script using `python3 hackergenerator.py`.  
 
-The script expects 2 arguments: `python3 hackergenerator.py <number_of_quotes> <format>`.  
-`<number_of_quotes>` is self expandatory (default = 1), `<format>` can be `csv` or `json` (default = csv).  
+You can just run the script using `python3 hackergenerator.py`.  
 
 That's not enough for you? Try `python3 hackergenerator.py 1000`!  
 
 You are a robot? Try `python3 hackergenerator.py 10 json`!  
+
+The script expects 3 arguments: `python3 hackergenerator.py [number_of_quotes] [format] [seed]`.  
+`[number_of_quotes]` is self expandatory (default = 1), `[format]` can be `csv` or `json` (default = csv), `[seed]` is a random seed string.  
 
 ## Credits & Resources
 
