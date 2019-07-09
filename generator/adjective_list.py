@@ -22,61 +22,66 @@ adjective_list = [
     ["tm", "forbidden"],
     ["ta", "patented"],
     ["tm", "neural"],
-    ["tm", "wireless"]
+    ["tm", "wireless"],
+    ["tm", "online"],
+    ["tm", "offline"],
+    ["tm", "primary"],
+    ["ta", "8-bit"],
+    ["tm", "open"],
+    ["ta", "live"],
+    ["tm", "flexible"],
+    ["tm", "adaptive"],
+    ["tm", "artificial"],
+    ["tm", "mobile"],
+    ["tm", "meta"],
+    ["tm", "regular"],
+    ["tm", "variable"],
+    ["tm", "global"],
+    ["tm", "automatic"],
+    ["tm", "geometric"],
+    ["tm", "inductive"],
+    ["tm", "default"],
+    ["tm", "constant"],
+    ["tm", "asymmetric"],
+    ["tm", "symmetric"],
+    ["tm", "robust"],
+    ["tm", "analog"],
+    ["tm", "digital"],
+    ["tm", "micro"],
+    ["tm", "standardized"],
+    ["tm", "hidden"],
+    ["tm", "biometric"],
+    ["tm", "safety"],
+    ["tm", "emulated"]
 ]
 
 """
 - root
-- patented
 - generic
 - bricked
 - miscellaneous
 - haptic
-- online
 - speed
 - dipole
 - logical
 - physical
 - relative
-- 8-bit
-- offline
-- live
 - lasered
-- primary
 - licensed
-- open
 - open source
-- flexible
-- adaptive
 - detection
-- artificial
 - robotic
 - immersive
-- mobile
-- meta
-- regular
 - customized
 - malfunctioning
-- automatic
-- variable
-- global
-- geometric
-- inductive
-- default
-- constant
 - granular
-- asymmetric
 - quality
 - high
 - sophisticated
 - statistical
-- robust
 - DIY
 - remote
-- analog
-- digital
 - handheld
-- micro
 - bleeding edge
 - modern
 - outdated
@@ -95,7 +100,6 @@ adjective_list = [
 - mathematical
 - linguistic
 - platform-specific
-- standardized
 - floating
 - normalized
 - bitwise
@@ -115,7 +119,6 @@ adjective_list = [
 - synchron
 - asynchron
 - biometric
-- hidden
 - idle
 - external
 - reserved
@@ -131,7 +134,5 @@ adjective_list = [
 - matching
 - weak
 - strong
-- emulated
 - partial
-- safety
 """
