@@ -50,7 +50,7 @@
   Returned is a JSON file:
 </p>
 <p>
-  <code>{"quotes": ["Wildcards transmit a wildcard document."]}</code>
+  <code>{"quotes": ["Proprietary e-mails build a string."]}</code>
 </p>
 <p><a href="/api?s=123" class="btn btn-primary mb-4" type="button" target="_blank">Try it out</a></p>
 
