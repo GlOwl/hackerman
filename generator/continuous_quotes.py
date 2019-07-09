@@ -1,7 +1,7 @@
 import hackergenerator
 import time
 while(True):
-    for x in range(0, 20):
-        print(hackergenerator.sentence())
-        print("")
-    time.sleep(10)
+    print(hackergenerator.sentence())
+    #time.sleep(0.5)
+    #print("")
+    time.sleep(0.5)

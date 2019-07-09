@@ -61,16 +61,6 @@ noun_list = [
     ["smber", "code"],
     ["smber", "wave"],
     ["sber", "IoT"],
-    ["smber", "blockchain"],
-    ["sber", "IoT"],
-    ["smber", "blockchain"],
-    ["sber", "IoT"],
-    ["smber", "blockchain"],
-    ["sber", "IoT"],
-    ["smber", "blockchain"],
-    ["sber", "IoT"],
-    ["smber", "blockchain"],
-    ["sber", "IoT"],
     ["smber", "blockchain"]
 ]
 

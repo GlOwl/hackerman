@@ -19,11 +19,14 @@ verb_list = [
     ["r", "transmit"],
     ["r", "compile"],
     ["r", "randomize"],
-    ["r", "deauth"]
+    ["r", "deauth"],
+    ["r", "alter"],
+    ["r", "mute"]
 ]
 
 
 """
+["r", "hash"]
 - wrap
 - iterate
 - loop
@@ -32,14 +35,11 @@ verb_list = [
 - ireg. write
 - infect
 - append
-- mute
-- alter
 - change
 - normalize
 - average
 - decrypt
 - encrypt
-- hash
 - convert
 - access
 - coordinate
