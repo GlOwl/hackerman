@@ -23,7 +23,7 @@ noun_list = [
     ["sbr", "handler"],
     ["smber", "exeption"],
     ["smber", "path"],
-    ["smber", "refference"],
+    ["smber", "reference"],
     ["smber", "template"],
     ["smber", "wildcard"],
     ["smber", "interface"],
