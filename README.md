@@ -51,6 +51,7 @@ online API.
 ## Local Generator Script
 
 The magic happens in [generator/hackergenerator.py](https://github.com/GlOwl/hackerman/blob/master/generator/hackergenerator.py).  
+
 You can just run the script using `python3 hackergenerator.py`.  
 
 That's not enough for you? Try `python3 hackergenerator.py 1000`!  
