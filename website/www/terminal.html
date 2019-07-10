@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hackerman terminal</title>
+
+  <style>
+    body {
+      background: #000;
+      padding: 0;
+      margin: 0;
+    }
+
+    #quotes {
+      color: #20C20E;
+      font-size: 3em;
+      font-family: monospace;
+      padding-left: .5em;
+    }
+
+    #quote-container {
+      height: 100vh;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="quote-container">
+    <p id="quotes"></p>
+  </div>
+
+  <script src="js/jquery-3.4.1.js"></script>
+
+  <script>
+    quotes = [];
+    displayed_quotes = [];
+    var n = 100;
+    var max = 200;
+
+    function load_new_quotes() {
+      $.ajax({
+        url: "api?n=" + n + "&f=json&s=" + (Math.floor(Math.random() * 1000000) + 1),
+        success: function(result) {
+          quotes = result.quotes;
+          add_quote();
+        }
+      });
+    }
+
+    function add_quote() {
+      if (quotes.length == 0) {
+        load_new_quotes();
+      } else {
+        if (displayed_quotes.length == 0) {
+          for (var i = 0; i < n / 2; i++) displayed_quotes.push(quotes.pop());
+        } else {
+          displayed_quotes.push(quotes.pop());
+        }
+
+        if (displayed_quotes.length > max) displayed_quotes.splice(0, max / 2);
+
+        var html = "";
+        for (var i = 0; i < displayed_quotes.length; i++) {
+          html += displayed_quotes[i] + "<br><br>";
+        }
+        document.getElementById("quotes").innerHTML = html;
+
+        scroll_down();
+      }
+    }
+
+    function scroll_down() {
+      var e = document.getElementById("quote-container");
+      e.scrollTop = e.scrollHeight;
+    }
+
+    window.onload = function() {
+      load_new_quotes();
+      setInterval(add_quote, 5000);
+    };
+  </script>
+
+</body>
+
+</html>

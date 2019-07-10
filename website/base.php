@@ -43,6 +43,9 @@
             <a class="nav-link <?php if($title == "About") echo "active";?>" href="about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="terminal">Terminal</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="https://github.com/GlOwl/hackerman">GitHub</a>
           </li>
           <li class="nav-item">
