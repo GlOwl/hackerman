@@ -105,6 +105,7 @@ def verb(conjugation = 'it', time = 'simple_present', inverted = "no", v = verb_
         return [x for x in a[2] if x[0] is time][0][1][conjugation]
 
 def random_noun_phrase():
+    """Helping function for one completely random noun phrase from the default word list"""
     return noun_phrase(
     definite = random.choice([True, False]),
     hasAdjective = random.choice([True, False]),
@@ -113,6 +114,7 @@ def random_noun_phrase():
     )
 
 def noun_phrase(definite = True, hasAdjective = False, singularity = "s", compound = False, n = noun_list.noun_list, a = adjective_list.adjective_list):
+    """gnerate a noun phrase ("determiner", "adjective", "noun")"""
     adj = ""
     if(hasAdjective is True):
         adj = adjective(a = a) + " "
@@ -124,6 +126,7 @@ def noun_phrase(definite = True, hasAdjective = False, singularity = "s", compou
         return (("a" + ("n " if (md[0] in ["a", "e", "i", "o", "u"]) else " ")) if singularity is "s" else "") + md
 
 def noun(singularity = "s", compound = False, n = noun_list.noun_list):
+    """generate a radom noun or comound noun."""
     nb = [w for w in n if "b" in w[0]]
     ne = [w for w in n if "e" in w[0]]
     na = [w for w in n if "a" in w[0]]
@@ -152,9 +155,11 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
                 return x + "s"
 
 def pronoun(singular = True):
+    """Genrate a random pronoun."""
     return(random.choice(["i", "you", "he", "she", "it"] if singular else ["we", "you", "they"]))
 
 def adjective(a = adjective_list.adjective_list):
+    """Pick a random adjective."""
     return random.choice(a)[1]
 
 def main():
