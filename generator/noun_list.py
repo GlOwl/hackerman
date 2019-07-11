@@ -1,15 +1,33 @@
 # s -> singular
 # m -> multiple
 
-# b -> begin of a compound noun
-# e -> end of a compound noun
+# b -> begin of a compound noun (like "serialized" in "serialized thread")
+# e -> end of a compound noun (like "thread" in "serialized thread")
+# a -> alone (never part of a compound noun like "garbage collector")
 
 # r -> regular (add s at the end to make it multiple)
 # i -> irregular (needs a lists of conjugations)
 
 noun_list = [
+    ["smar", "if loop"],
+    ["smar", "garbage collector"],
+    ["smber", "collector"],
+    ["smber", "thread"],
     ["smber", "model"],
+    ["smber", "switch"],
+    ["smber", "dimension"],
+    ["sber", "foo"],
+    ["sber", "bar"],
     ["smber", "key"],
+    ["smber", "java"],
+    ["smber", "coffee"],
+    ["sber", "null"],
+    ["sber", "NaN"],
+    ["sber", "undefined"],
+    ["smber", "integer"],
+    ["smber", "doubel"],
+    ["smber", "string"],
+    ["sar", "bare matel"],
     ["smber", "adapter"],
     ["smber", "framework"],
     ["smber", "system"],
@@ -67,7 +85,6 @@ noun_list = [
 
 
 """
-- thread
 - error
 - warning
 - sequence
