@@ -21,12 +21,12 @@ verb_list = [
     ["r", "randomize"],
     ["r", "deauth"],
     ["r", "alter"],
-    ["r", "mute"]
+    ["r", "mute"],
+    ["r", "hash"]
 ]
 
 
 """
-["r", "hash"]
 - wrap
 - iterate
 - loop
