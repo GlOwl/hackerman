@@ -9,7 +9,11 @@ verb_list = [
     ["r", "display"],
     ["r", "address"],
     ["r", "identify"],
-    ["i", "build", [["simple_present", {"i": "build", "you": "build", "it": "builds", "we": "build", "they": "build"}], ["simple_past", {"i": "built", "you": "built", "it": "built", "we": "built", "they": "built"}], ["simple_future", {"i": "will build", "you": "will build", "it": "will build", "we": "will build", "they": "will build"}]]],
+    ["i", "build", {"simple_present" : {"i": "build", "you": "build", "it": "builds", "we": "build", "they": "build"}, "simple_past" : {"i": "built", "you": "built", "it": "built", "we": "built", "they": "built"}, "simple_future" : {"i": "will build", "you": "will build", "it": "will build", "we": "will build", "they": "will build"}}],
+
+    # having it as a one dict will make it easy to access data, just like this:
+    # a[2][time][conjugation]
+
     ["r", "load"],
     ["r", "define"],
     ["r", "decentralize"],
