@@ -9,10 +9,27 @@
 # i -> irregular (needs a lists of conjugations)
 
 noun_list = [
+    ["smer", "error"],
+    ["smer", "warning"],
+    ["smer", "sequence"],
+    ["smer", "information"],
+    ["sbr", "ASCII"],
+    ["smer", "pattern"],
+    ["smer", "simulation"],
+    ["smer", "simulator"],
+    ["ser", "indicator"],
+    ["smber", "troll"],
+    ["smer", "regulator"],
+    ["smber", "container"],
+    ["smber", "breadboard"],
+    ["sber", "IC"],
+    ["smber", "controller"],
+    ["smber", "drone"],
+    ["smber", "deauther"],
     ["smar", "if loop"],
     ["sbr", "GTFO"],
     ["smar", "garbage collector"],
-    ["smber", "collector"],
+    ["smer", "collector"],
     ["smber", "thread"],
     ["smber", "model"],
     ["smber", "switch"],
@@ -86,24 +103,6 @@ noun_list = [
 
 
 """
-- error
-- warning
-- sequence
-- information
-- UTF-8
-- ASCII
-- pattern
-- simulation
-- simulator
-- indicator
-- troll
-- regulator
-- container
-- breadboard
-- IC
-- controller
-- drone
-- deauther
 - fax
 - phone
 - battery
