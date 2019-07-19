@@ -138,7 +138,7 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
             x = random.choice(nb)[1] + " " + random.choice([w for w in ne if "m" in w[0]])[1]
             if((x[1][-1] in ["s", "x"]) or (x[1][-2:-1] in ["sh", "ch", "ss"])):
                 return x + "es"
-            if(x[-1] in ["y"] and x[-2] not in ["a", "e", "i", "o", "u"]):
+            elif(x[-1] in ["y"] and x[-2] not in ["a", "e", "i", "o", "u"]):
                 return x[:-1] + "ies"
             else:
                 return x + "s"
@@ -149,7 +149,7 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
             x = random.choice([w for w in nb+ne+na if "m" in w[0]])[1]
             if((x[1][-1] in ["s", "x"]) or ((x[1][-2:-1] in ["sh", "ch", "ss"]))):
                 return x + "es"
-            if(x[-1] in ["y"] and x[-2] not in ["a", "e", "i", "o", "u"]):
+            elif(x[-1] in ["y"] and x[-2] not in ["a", "e", "i", "o", "u"]):
                 return x[:-1] + "ies"
             else:
                 return x + "s"
