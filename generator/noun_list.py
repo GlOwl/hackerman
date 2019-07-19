@@ -9,17 +9,30 @@
 # i -> irregular (needs a lists of conjugations)
 
 noun_list = [
-    ["smer", "error"],
-    ["smer", "warning"],
-    ["smer", "sequence"],
-    ["smer", "information"],
+    ["smber", "phone"],
+    ["smber", "space"],
+    ["sber", "data"],
+    ["sber", "analysis"],
+    ["smber", "sample"],
+    ["sber", "intelligence"],
+    ["smber", "sensor"],
+    ["smber", "camera"],
+    ["smber", "battery"],
+    ["smber", "process"],
+    ["smber", "website"],
+    ["smber", "homepage"],
+    ["smber", "app"],
+    ["smber", "error"],
+    ["smber", "warning"],
+    ["smber", "sequence"],
+    ["smber", "information"],
     ["sbr", "ASCII"],
-    ["smer", "pattern"],
-    ["smer", "simulation"],
-    ["smer", "simulator"],
-    ["ser", "indicator"],
+    ["smber", "pattern"],
+    ["smber", "simulation"],
+    ["smber", "simulator"],
+    ["sber", "indicator"],
     ["smber", "troll"],
-    ["smer", "regulator"],
+    ["smber", "regulator"],
     ["smber", "container"],
     ["smber", "breadboard"],
     ["sber", "IC"],
@@ -27,7 +40,8 @@ noun_list = [
     ["smber", "drone"],
     ["smber", "deauther"],
     ["smar", "if loop"],
-    ["sbr", "GTFO"],
+    ["sar", "GTFO"],
+    ["sber", "fax"],
     ["smar", "garbage collector"],
     ["smer", "collector"],
     ["smber", "thread"],
@@ -43,7 +57,7 @@ noun_list = [
     ["sber", "NaN"],
     ["sber", "undefined"],
     ["smber", "integer"],
-    ["smber", "doubel"],
+    ["smber", "double"],
     ["smber", "string"],
     ["sar", "bare matel"],
     ["smber", "adapter"],
@@ -101,28 +115,13 @@ noun_list = [
     ["smber", "repository"]
 ]
 
+"""
+irregular:
+-
+"""
 
 """
-- fax
-- phone
-- battery
-- process
-- space
-- data
-- analysis
-- sample
-- intelligence
-- sensor
-- model
-- key
-- camera
-- adapter
-- framework
-- website
-- homepage
-- system
-- algorithm
-- app
+-
 - LCD
 - lemur
 - spacehuhn
@@ -164,7 +163,6 @@ noun_list = [
 - HDD
 - SDD
 - keyboard
-- camera
 - transition
 - tree
 - debugger
