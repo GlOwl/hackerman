@@ -10,6 +10,7 @@
 
 noun_list = [
     ["smar", "if loop"],
+    ["sbr", "GTFO"],
     ["smar", "garbage collector"],
     ["smber", "collector"],
     ["smber", "thread"],
