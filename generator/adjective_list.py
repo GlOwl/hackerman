@@ -52,87 +52,86 @@ adjective_list = [
     ["tm", "hidden"],
     ["tm", "biometric"],
     ["tm", "safety"],
-    ["tm", "emulated"]
+    ["tm", "emulated"],
+    ["ta", "root"],
+    ["ta", "generic"],
+    ["ta", "bricked"],
+    ["ta", "miscellaneous"],
+    ["ta", "haptic"],
+    ["tm", "logical"],
+    ["ta", "physical"],
+    ["ta", "relative"],
+    ["ta", "lasered"],
+    ["ta", "licensed"],
+    ["ta", "robotic"],
+    ["tm", "immersive"],
+    ["ta", "customized"],
+    ["ta", "malfunctioning"],
+    ["tm", "granular"],
+    ["ta", "quality"],
+    ["ta", "open source"],
+    ["tm", "sophisticated"],
+    ["tm", "statistical"],
+    ["tm", "DIY"],
+    ["ta", "remote"],
+    ["ta", "handheld"],
+    ["tm", "bleeding edge"],
+    ["tm", "modern"],
+    ["tm", "outdated"],
+    ["ta", "legacy"],
+    ["ta", "visual"],
+    ["ta", "guidance"],
+    ["tm", "private"],
+    ["tm", "public"],
+    ["tm", "cyber"],
+    ["ta", "numeric"],
+    ["ta", "mathematical"],
+    ["ta", "linguistic"],
+    ["ta", "platform-specific"],
+    ["ta", "normalized"],
+    ["ta", "bitwise"],
+    ["ta", "hexadecimal"],
+    ["ta", "octal"],
+    ["ta", "binary"],
+    ["ta", "decimal"],
+    ["te", "large"],
+    ["te", "small"],
+    ["tm", "normal"],
+    ["ta", "infected"],
+    ["ta", "internal"],
+    ["tm", "synchron"],
+    ["tm", "asynchron"],
+    ["ta", "biometric"],
+    ["ta", "idle"],
+    ["ta", "external"],
+    ["ta", "reserved"],
+    ["ta", "explicit"],
+    ["ta", "implicit"],
+    ["tm", "decentralized"],
+    ["tm", "interactive"],
+    ["ta", "lambda"],
+    ["tm", "recursive"],
+    ["te", "weak"],
+    ["ta", "matching"],
+    ["tm", "similar"],
+    ["te", "strong"],
+    ["ta", "partial"],
+    ["ta", "performance"],
+    ["ta", "build in"]
 ]
-
 """
-- root
-- generic
-- bricked
-- miscellaneous
-- haptic
 - speed
-- dipole
-- logical
-- physical
-- relative
-- lasered
-- licensed
-- open source
 - detection
-- robotic
-- immersive
-- customized
-- malfunctioning
-- granular
-- quality
 - high
-- sophisticated
-- statistical
-- DIY
-- remote
-- handheld
-- bleeding edge
-- modern
-- outdated
-- titanium
-- legacy
-- visual
-- guidance
 - plasma
-- private
-- public
-- cyber
+- titanium
 - usability
 - surveillance
 - face detection
-- numeric
-- mathematical
-- linguistic
-- platform-specific
 - floating
-- normalized
-- bitwise
-- hexadecimal
-- octal
-- binary
-- large
-- small
-- normal
-- infected
-- decimal
-- localize
+- localized
 - read only
 - write only
-- internal
-- log
-- synchron
-- asynchron
-- biometric
-- idle
-- external
-- reserved
-- explicit
-- implicit
+
 - singleton
-- build in
-- performance
-- decentralized
-- interactive
-- lambda
-- recursive
-- matching
-- weak
-- strong
-- partial
 """
