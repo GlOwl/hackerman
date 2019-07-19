@@ -4,6 +4,76 @@
 # i -> irregular (needs a lists of conjugations)
 
 verb_list = [
+    ["r", "wrap"],
+    ["r", "iterate"],
+    ["r", "loop"],
+    ["r", "port"],
+    ["r", "infect"],
+    ["r", "append"],
+    ["r", "change"],
+    ["r", "normalize"],
+    ["r", "average"],
+    ["r", "decrypt"],
+    ["r", "encrypt"],
+    ["r", "convert"],
+    ["r", "access"],
+    ["r", "coordinate"],
+    ["r", "power"],
+    ["r", "monitor"],
+    ["r", "regulate"],
+    ["r", "detect"],
+    ["r", "block"],
+    ["r", "debug"],
+    ["r", "observe"],
+    ["r", "bypass"],
+    ["r", "input"],
+    ["r", "synthesize"],
+    ["r", "connect"],
+    ["r", "parse"],
+    ["r", "generate"],
+    ["r", "copy"],
+    ["r", "analyze"],
+    ["r", "control"],
+    ["r", "benchmark"],
+    ["r", "request"],
+    ["r", "enter"],
+    ["r", "call"],
+    ["r", "detect"],
+    ["r", "print"],
+    ["r", "simulate"],
+    ["r", "emulate"],
+    ["r", "intercept"],
+    ["r", "sequence"],
+    ["r", "synchronize"],
+    ["r", "test"],
+    ["r", "tokenize"],
+    ["r", "format"],
+    ["r", "constrain"],
+    ["r", "import"],
+    ["r", "export"],
+    ["r", "develop"],
+    ["r", "invert"],
+    ["r", "slice"],
+    ["r", "index"],
+    ["r", "join"],
+    ["r", "shorten"],
+    ["r", "partition"],
+    ["r", "decompile"],
+    ["r", "split"],
+    ["r", "swap"],
+    ["r", "cast"],
+    ["r", "clear"],
+    ["r", "stream"],
+    ["r", "remove"],
+    ["r", "add"],
+    ["r", "signal"],
+    ["r", "process"],
+    ["r", "disconnect"],
+    ["r", "start"],
+    ["r", "interpret"],
+    ["r", "yield"],
+    ["r", "match"],
+    ["r", "inspect"],
     ["r", "collect"],
     ["r", "restrict"],
     ["r", "display"],
@@ -27,83 +97,10 @@ verb_list = [
 
 
 """
-- wrap
-- iterate
-- loop
-- port
 - read
-- ireg. write
-- infect
-- append
-- change
-- normalize
-- average
-- decrypt
-- encrypt
-- convert
-- access
-- coordinate
-- power
-- monitor
-- regulate
+- write
 - send
-- detect
-- block
-- debug
-- observe
-- bypass
-- input
-- synthesize
-- connect
-- parse
-- generate
-- compress
-- copy
 - override
-- analyze
-- control
-- benchmark
-- request
-- enter
-- call
-- detect
-- print
-- simulate
-- emulate
-- intercept
-- sequence
-- synchronize
-- test
-- tokenize
-- format
-- constrain
-- import
-- export
-- develop
-- invert
-- slice
-- index
-- join
-- shorten
-- partition
-- decompile
-- split
-- swap
+
 - swap out
-- cast
-- clear
-- stream
-- collect
-- restrict
-- discard
-- remove
-- add
-- signal
-- process
-- disconnect
-- start
-- interpret
-- yield
-- match
-- inspect
 """
