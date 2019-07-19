@@ -9,6 +9,70 @@
 # i -> irregular (needs a lists of conjugations)
 
 noun_list = [
+    ["smber", "lemur"],
+    ["smber", "spacehuhn"],
+    ["smber", "laser"],
+    ["smber", "signal"],
+    ["smber", "network"],
+    ["smber", "analyzer"],
+    ["smber", "application"],
+    ["smber", "firewall"],
+    ["smber", "cybernuke"],
+    ["sber", "IRC"],
+    ["smber", "mainframe"],
+    ["smber", "server"],
+    ["smber", "cloud"],
+    ["smbr", "reality"],
+    ["smer", "request"],
+    ["sber", "WiFi"],
+    ["sber", "Bluetooth"],
+    ["smber", "cable"],
+    ["sber", "ethernet"],
+    ["sber", "LAN"],
+    ["sber", "WAN"],
+    ["smber", "antenna"],
+    ["sber", "NAS"],
+    ["smar", "power supply"],
+    ["smber", "grid"],
+    ["smber", "display"],
+    ["smber", "monitor"],
+    ["smber", "microcontroller"],
+    ["smber", "controller"],
+    ["ser", "SoC"],
+    ["sbr", "SBC"],
+    ["sbr", "ATX"],
+    ["sbr", "ITX"],
+    ["sbr", "USB"],
+    ["ser", "HDD"],
+    ["ser", "SSD"],
+    ["smber", "keyboard"],
+    ["smer", "transition"],
+    ["smber", "tree"],
+    ["ser", "SD"],
+    ["ser", "LED"],
+    ["ser", "IDE"],
+    ["smer", "editor"],
+    ["smer", "frame"],
+    ["ser", "PoC"],
+    ["smber", "bucket"],
+    ["sber", "VM"],
+    ["smer", "identifier"],
+    ["sber", "middleware"],
+    ["sber", "bottleneck"],
+    ["ser", "UI"],
+    ["ser", "GUI"],
+    ["smber", "observer"],
+    ["smber", "singleton"],
+    ["smber", "array"],
+    ["smber", "transmitter"],
+    ["smber", "DVD"],
+    ["ser", "logic"],
+    ["smber", "emulation"],
+    ["smer", "reader"],
+    ["smer", "writer"],
+    ["smer", "label"],
+    ["smber", "clock"],
+    ["smber", "MCU"],
     ["smber", "phone"],
     ["smber", "space"],
     ["sber", "data"],
@@ -107,92 +171,10 @@ noun_list = [
     ["smber", "library"],
     ["smber", "limit"],
     ["smber", "function"],
-    ["smber", "token"],
+    ["smer", "token"],
     ["smber", "code"],
     ["smber", "wave"],
     ["sber", "IoT"],
     ["smber", "blockchain"],
     ["smber", "repository"]
 ]
-
-"""
-irregular:
--
-"""
-
-"""
--
-- LCD
-- lemur
-- spacehuhn
-- laser
-- signal
-- network
-- analyzer
-- application
-- bandwidth
-- firewall
-- cybernuke
-- IRC
-- mainframe
-- server
-- cloud
-- reality
-- request
-- response
-- WiFi
-- Bluetooth
-- cable
-- ethernet
-- LAN
-- WAN
-- antenna
-- NAS
-- network
-- power supply
-- grid
-- display
-- monitor
-- microcontroller
-- controller
-- SoC
-- SBC
-- ATX
-- ITX
-- USB
-- HDD
-- SDD
-- keyboard
-- transition
-- tree
-- debugger
-- SD
-- LED
-- editor
-- IDE
-- frame
-- PoC
-- GTFO
-- token(s)
-- bucket(s)
-- VM(s)
-- identifier
-- middleware
-- bottleneck
-- (G)UI
-- observer
-- singleton
-- pattern(s)
-- array(s)
-- transmitter
-- form
-- DC
-- DVD
-- logic
-- emulation
-- reader
-- writer
-- label
-- clock
-- ethernet
-"""
