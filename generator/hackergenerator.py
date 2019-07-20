@@ -136,7 +136,7 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
             return random.choice(nb)[1] + " " + random.choice([w for w in ne if "s" in w[0]])[1]
         if(singularity in "m"):
             x = random.choice(nb)[1] + " " + random.choice([w for w in ne if "m" in w[0]])[1]
-            if((x[1][-1] in ["s", "x"]) or (x[1][-2:-1] in ["sh", "ch", "ss"])):
+            if((x[-1] in ["s", "x"]) or (x[-2:] in ["sh", "ch", "ss"])):
                 return x + "es"
             elif(x[-1] in ["y"] and x[-2] not in ["a", "e", "i", "o", "u"]):
                 return x[:-1] + "ies"
@@ -145,14 +145,14 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
     else:
         if(singularity in "s"):
             return random.choice([w for w in nb+ne+na if "s" in w[0]])[1]
-        else:
-            x = random.choice([w for w in nb+ne+na if "m" in w[0]])[1]
-            if((x[1][-1] in ["s", "x"]) or ((x[1][-2:-1] in ["sh", "ch", "ss"]))):
-                return x + "es"
+        if(singularity in "m"):
+            x = random.choice(nb+nb+na)[1]
+            if((x[-1] in ["s", "x"]) or (x[-2:] in ["sh", "ch", "ss"])):
+                return (x + "es")
             elif(x[-1] in ["y"] and x[-2] not in ["a", "e", "i", "o", "u"]):
-                return x[:-1] + "ies"
+                return (x[:-1] + "ies")
             else:
-                return x + "s"
+                return (x + "s")
 
 def pronoun(singular = True):
     """Genrate a random pronoun."""

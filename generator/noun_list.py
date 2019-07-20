@@ -10,7 +10,7 @@
 
 noun_list = [
     ["smber", "lemur"],
-    ["smber", "spacehuhn"],
+    ["sber", "spacehuhn"],
     ["smber", "laser"],
     ["smber", "signal"],
     ["smber", "network"],
