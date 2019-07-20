@@ -178,4 +178,5 @@ noun_list = [
     ["smber", "blockchain"],
     ["smber", "repository"],
     ["smber", "northbridge"],
+    ["smber", "southbridge"]
 ]
