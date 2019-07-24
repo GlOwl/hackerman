@@ -16,26 +16,15 @@ def get_json(n):
 
 def get_csv(n):
     """Generates and returns n sentences in CSV format."""
-    quotes = generate(n)
-    csv = ""
-
-    for i in range(len(quotes)):
-        csv = csv + quotes[i] + "\n"
-
-    return csv
+    return '\n'.join(generate(n))
 
 def generate(n):
     """Generates and returns n sentences and retruns them as an array."""
-    quotes = []
-
-    for x in range(0, n):
-        quotes.append(sentence())
-
-    return quotes;
+    return [sentence() for _ in range(0, n)]
 
 def sentence():
     """Generates one random sentence."""
-    x = random.choice(range(0, 4))
+    x = random.randint(0, 3)
     if(x is 0):
         a = random.choice(['s', 'm'])
         if(a is 's'):
@@ -44,20 +33,16 @@ def sentence():
             b = 'they'
 
         r = noun_phrase(definite = random.choice([True, False]), hasAdjective = random.choice([True, False, False]), singularity = a, compound = random.choice([True, False])) + " " + verb(conjugation = b, time = random.choice(['simple_present', 'simple_past', 'simple_future'])) + " " + random_noun_phrase() + "."
-        return r[0].upper() + r[1:]
     elif(x is 1):
         r = verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + ", then you can " + verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + "!"
-        return r[0].upper() + r[1:]
     elif(x is 2):
         p1 = pronoun(random.choice([True, False]))
         r = p1 + random.choice([" can't ", " can ", " may "]) + verb(conjugation = 'i', time = 'simple_present') + " " + random_noun_phrase() + "!"
-        return r[0].upper() + r[1:]
     elif(x is 3):
         p1 = pronoun()
         need = [["r", "need"]]
         r =  p1 + " " + verb(conjugation = ('it' if p1 in ['he', 'she'] else p1), time = 'simple_present', v = need) + " to " + verb(conjugation = 'i', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, True, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, True, False])) + "!"
-        return r[0].upper() + r[1:]
-
+    return r[0].upper() + r[1:]
 
 
 
@@ -85,7 +70,7 @@ def verb(conjugation = 'it', time = 'simple_present', inverted = "no", v = verb_
             elif(conjugation in ["it"]):
                 if((a[1][-1] in ["s", "x"]) or (a[1][-2:-1] in ["sh", "ch", "ss"])):
                     return a[1]+"es"
-                elif(a[1][-1] in "y" and a[1][-2] not in ["a", "e", "i", "o", "u"]):
+                elif(a[1][-1] in ["y"] and a[1][-2] not in ["a", "e", "i", "o", "u"]):
                     return a[1][:-1]+"ies"
                 else:
                     return a[1]+"s"
@@ -93,7 +78,7 @@ def verb(conjugation = 'it', time = 'simple_present', inverted = "no", v = verb_
         if(time == "simple_past"):
             if(a[1][-1] in "e"):
                 return a[1]+"d"
-            elif(a[1][-1] in "y" and a[1][-2] not in ["a", "e", "i", "o", "u"]):
+            elif(a[1][-1] in ["y"] and a[1][-2] not in ["a", "e", "i", "o", "u"]):
                 return a[1][:-1]+"ied"
             else:
                 return a[1]+"ed"
@@ -102,7 +87,7 @@ def verb(conjugation = 'it', time = 'simple_present', inverted = "no", v = verb_
             return "will " + a[1]
 
     else:
-        return [x for x in a[2] if x[0] is time][0][1][conjugation]
+        return a[2][time][conjugation]
 
 def random_noun_phrase():
     """Helping function for one completely random noun phrase from the default word list"""
@@ -133,9 +118,9 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
 
     if(compound):
         if(singularity in "s"):
-            return random.choice(nb)[1] + " " + random.choice([w for w in ne if "s" in w[0]])[1]
+            return random.choice(nb)[1] + " " + random.choice([w[1] for w in ne if "s" in w[0]])
         if(singularity in "m"):
-            x = random.choice(nb)[1] + " " + random.choice([w for w in ne if "m" in w[0]])[1]
+            x = random.choice(nb)[1] + " " + random.choice([w[1] for w in ne if "m" in w[0]])
             if((x[-1] in ["s", "x"]) or (x[-2:] in ["sh", "ch", "ss"])):
                 return x + "es"
             elif(x[-1] in ["y"] and x[-2] not in ["a", "e", "i", "o", "u"]):
@@ -144,7 +129,7 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
                 return x + "s"
     else:
         if(singularity in "s"):
-            return random.choice([w for w in nb+ne+na if "s" in w[0]])[1]
+            return random.choice([w[1] for w in nb+ne+na if "s" in w[0]])
         if(singularity in "m"):
             x = random.choice(nb+nb+na)[1]
             if((x[-1] in ["s", "x"]) or (x[-2:] in ["sh", "ch", "ss"])):
