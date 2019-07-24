@@ -118,6 +118,7 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
 
     if(compound):
         if(singularity in "s"):
+            #first word in compund has to be singular?
             return random.choice(nb)[1] + " " + random.choice([w[1] for w in ne if "s" in w[0]])
         if(singularity in "m"):
             x = random.choice(nb)[1] + " " + random.choice([w[1] for w in ne if "m" in w[0]])
@@ -131,7 +132,7 @@ def noun(singularity = "s", compound = False, n = noun_list.noun_list):
         if(singularity in "s"):
             return random.choice([w[1] for w in nb+ne+na if "s" in w[0]])
         if(singularity in "m"):
-            x = random.choice(nb+nb+na)[1]
+            x = random.choice([w[1] for w in nb+ne+na if "m" in w[0]])
             if((x[-1] in ["s", "x"]) or (x[-2:] in ["sh", "ch", "ss"])):
                 return (x + "es")
             elif(x[-1] in ["y"] and x[-2] not in ["a", "e", "i", "o", "u"]):
