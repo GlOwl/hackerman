@@ -9,6 +9,21 @@
 # i -> irregular (needs a lists of conjugations)
 
 noun_list = [
+    ["sar", "git"],
+    ["sar", "github"],
+    ["sar", "gitlab"],
+    ["sar", "gitea"],
+    ["sar", "bitbucket"],
+    ["smer", "branch"],
+    ["smer", "commit"],
+    ["smber", "log"],
+    ["smar", "pull request"],
+    ["smar", "merge request"],
+    ["smber", "stash"],
+    ["sber", "status"],
+    ["smber", "tag"],
+    ["smber", "origin"],
+    ["smber", "master"],
     ["smber", "lemur"],
     ["sber", "spacehuhn"],
     ["smber", "laser"],

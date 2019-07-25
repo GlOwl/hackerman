@@ -4,6 +4,19 @@
 # i -> irregular (needs a lists of conjugations)
 
 verb_list = [
+    ["r", "init"],
+    ["r", "pull"],
+    ["r", "push"],
+    ["r", "clone"],
+    ["r", "fetch"],
+    ["r", "commit"],
+    ["r", "rebase"],
+    ["r", "merge"],
+    ["r", "fork"],
+    ["r", "stash"],
+    ["r", "tag"],
+    ["r", "cherry-pick"],
+    ["r", "checkout"],
     ["r", "wrap"],
     ["r", "iterate"],
     ["r", "loop"],
@@ -80,7 +93,6 @@ verb_list = [
     ["r", "address"],
     ["r", "identify"],
     ["i", "build", {"simple_present" : {"i": "build", "you": "build", "it": "builds", "we": "build", "they": "build"}, "simple_past" : {"i": "built", "you": "built", "it": "built", "we": "built", "they": "built"}, "simple_future" : {"i": "will build", "you": "will build", "it": "will build", "we": "will build", "they": "will build"}}],
-
     ["r", "load"],
     ["r", "define"],
     ["r", "decentralize"],
