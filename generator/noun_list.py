@@ -81,7 +81,7 @@ noun_list = [
     ["smber", "array"],
     ["smber", "transmitter"],
     ["smber", "DVD"],
-    ["ser", "logic"],
+    ["ber", "logic"],
     ["smber", "emulation"],
     ["smer", "reader"],
     ["smer", "writer"],
