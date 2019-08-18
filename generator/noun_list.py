@@ -138,7 +138,7 @@ noun_list = [
     ["smber", "integer"],
     ["smber", "double"],
     ["smber", "string"],
-    ["sar", "bare matel"],
+    ["sar", "bare metal"],
     ["smber", "adapter"],
     ["smber", "framework"],
     ["smber", "system"],
