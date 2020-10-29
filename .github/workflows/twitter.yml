@@ -1,0 +1,31 @@
+on:
+  schedule:
+    - cron: "0 14 * * *"
+
+name: Twitter Bot
+
+jobs:
+
+  tweet:
+    name: tweet
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        uses: actions/checkout@v2
+      - id: pip
+        run: pip3 install tweepy
+      - id: build-keys
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+          CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+          CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+        run: |
+          echo "consumer_key = \"$CONSUMER_KEY\"" > twitter_bot/keys.py
+          echo "consumer_secret = \"$CONSUMER_SECRET\"" >> twitter_bot/keys.py
+          echo "access_token = \"$ACCESS_TOKEN\"" >> twitter_bot/keys.py
+          echo "access_token_secret = \"$ACCESS_TOKEN_SECRET\"" >> twitter_bot/keys.py
+          echo "path = \"generator/\"" >> twitter_bot/keys.py
+      - id: tweet
+        run: |
+          python3 twitter_bot/tweet.py
