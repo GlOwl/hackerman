@@ -1,5 +1,13 @@
 # Hackerman Quote Generator
 
+---
+
+## Update November 2020
+
+Because of the server costs we decided to take hackerman.wtf offline, which also runs the @hackermanwtf twitter account. 😢
+
+---
+
 <p align="center"><img alt="PICTURE logo" src="https://raw.githubusercontent.com/GlOwl/hackerman/master/logo.png" width="200"></p>
 
 <p align="center">
