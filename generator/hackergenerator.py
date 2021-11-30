@@ -26,30 +26,30 @@ def sentence():
     """Generates one random sentence."""
     x = random.randint(0, 6)
     #x = 5 #uncoment for testing a specific sentence type
-    if(x is 0):
+    if(x == 0):
         a = random.choice(['s', 'm'])
-        if(a is 's'):
+        if(a == 's'):
             b = 'it'
         else:
             b = 'they'
 
         r = noun_phrase(definite = random.choice([True, False]), hasAdjective = random.choice([True, False, False]), singularity = a, compound = random.choice([True, False])) + " " + verb(conjugation = b, time = random.choice(['simple_present', 'simple_past', 'simple_future'])) + " " + random_noun_phrase() + ". With " + noun_phrase(definite = False, hasAdjective = False, singularity = random.choice(['s', 's', 'm']), compound = True) + "!"
-    elif(x is 1):
+    elif(x == 1):
         r = verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + ", then you can " + verb(conjugation = 'you', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False])) + "!"
-    elif(x is 2):
+    elif(x == 2):
         p1 = 'you'
         r = p1 + " can't " + verb(conjugation = 'i', time = 'simple_present') + " " + random_noun_phrase() + ", it " + verb(conjugation = 'it', time = 'simple_future', ) + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False]), n = noun_list.noun_list, a = adjective_list.adjective_list) + "!"
-    elif(x is 3):
+    elif(x == 3):
         p1 = pronoun()
         need = [["r", "need"]]
         r =  p1 + " " + verb(conjugation = ('it' if p1 in ['he', 'she'] else p1), time = 'simple_present', v = need) + " to " + verb(conjugation = 'i', time = 'simple_present') + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, True, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, True, False])) + "!"
-    elif(x is 4):
+    elif(x == 4):
         p1 = pronoun(singular = 's');
         i1 = random.choice([" with " + noun_phrase(definite = random.choice([True, False]), hasAdjective = random.choice([True, False]), singularity = "s", compound = random.choice([True, False])), " with " + noun_phrase(definite = random.choice([True, False]), hasAdjective = random.choice([True, False]), singularity = "s", compound = random.choice([True, False])), ''])
         r = p1 + random.choice([" can ", " may "]) + verb(conjugation = 'i', time = 'simple_present') + " " + random_noun_phrase() + i1 + ", it " + verb(conjugation = 'it', time = 'simple_future', ) + " " + noun_phrase(definite = True, hasAdjective = random.choice([True, False, False]), singularity = random.choice(['s', 'm']), compound = random.choice([True, False]), n = noun_list.noun_list, a = adjective_list.adjective_list) + "."
-    elif(x is 5):
+    elif(x == 5):
         r = noun_phrase() + " " + verb(conjugation = 'it', time = 'simple_present') + '. Let it ' + random.choice(verb_list.verb_list)[1] + random.choice([' by itself.', " before using it."])
-    elif(x is 6):
+    elif(x == 6):
         p = pronoun(singular = 's');
         r = p + " " + verb(conjugation = p, time = 'simple_past') + " " + noun_phrase(definite = True, hasAdjective = False, singularity = "s", compound = True) + ' and ' + verb(conjugation = 'it', time = 'simple_past') + " " + random_noun_phrase() + "."
     return r[0].upper() + r[1:]
@@ -115,10 +115,10 @@ def noun_phrase(definite = True, hasAdjective = False, singularity = "s", compou
         adj = adjective(a = a) + " "
     md = adj + noun(singularity = singularity, compound = compound, n = n)
     if(definite is True):
-        return ("the " if singularity is "s" else "") + md
+        return ("the " if singularity == "s" else "") + md
     else:
         #We know that this is not entirely correct but we didn't bother to do a speach analysis for every word ;p
-        return (("a" + ("n " if (md[0] in ["a", "e", "i", "o", "u"]) else " ")) if singularity is "s" else "") + md
+        return (("a" + ("n " if (md[0] in ["a", "e", "i", "o", "u"]) else " ")) if singularity == "s" else "") + md
 
 def noun(singularity = "s", compound = False, n = noun_list.noun_list):
     """generate a radom noun or comound noun."""
